@@ -1,3 +1,17 @@
+# This script calculates Fleiss' Kappa, as described on 
+# http://en.wikipedia.org/wiki/Fleiss'_kappa
+#
+# Usage:
+# $ awk -v n=N -f kappa.awk FILENAME
+# 
+# Variables
+#    N: Number of raters
+#    FILENAME: CSV file with input table   
+#
+# Test
+# $ awk -v n=14 -f kappa.awk test.csv
+# 0.209931
+# 
 
 {
 	row=0
