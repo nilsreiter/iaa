@@ -1,21 +1,17 @@
-# This script calculates Fleiss' Kappa, as described on 
-# http://en.wikipedia.org/wiki/Fleiss'_kappa
+# This script calculates the observed agreement.
 #
 # Usage:
-# $ awk -f kappa.awk FILENAME
+# $ awk -f p_observed.awk FILENAME
 # 
 # Variables
 #    FILENAME: CSV file with input table   
 #
 # Test
-# $ awk -f kappa.awk test.csv
-# 0.209931
+# $ awk -f p_observed.awk test.csv
+# 0.378022
 # 
 #
 # Changelog 
-# 2.0
-# - Number of raters is counted in the first row, we no longer need to specify it.
-#
 # 1.0
 # - Initial version
 
