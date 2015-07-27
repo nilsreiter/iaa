@@ -1,3 +1,4 @@
+#!/usr/bin/awk -f
 # This script calculates Fleiss' Kappa, as described on 
 # http://en.wikipedia.org/wiki/Fleiss'_kappa
 #

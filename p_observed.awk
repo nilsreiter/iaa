@@ -1,3 +1,4 @@
+#!/usr/bin/awk -f
 # This script calculates the observed agreement.
 #
 # Usage:

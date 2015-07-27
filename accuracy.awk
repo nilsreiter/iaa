@@ -1,4 +1,4 @@
-#!/usr/bin/awk
+#!/usr/bin/awk -f
 
 #
 # This script calculates accuracy, based on the output of convert.pl
