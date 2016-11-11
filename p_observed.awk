@@ -13,6 +13,10 @@
 # 
 #
 # Changelog 
+# 1.1
+# - Added option to get observed agreement printed 
+#   by line: Add '-v byline=1' to the command line
+#
 # 1.0
 # - Initial version
 
@@ -29,7 +33,11 @@
 	if (length(n)==0) {
 		n = raters
 	}
-	rowsum += 1/(n*(n-1)) * row
+	agr = 1/(n*(n-1)) * row
+	if (byline) {
+		print agr
+	}
+	rowsum += agr
 	rows++
 }
 
